@@ -1,6 +1,28 @@
 import sys
 import math
 import numpy as np
+import matplotlib.pyplot as plt
+
+
+def plotsome():
+    x = np.arange(0, 10, 0.1)
+    y = np.sin(x)
+
+    # Plot the line
+    plt.plot(x, y)
+
+    # Add labels and title
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Sinusoidal Function')
+
+    # Show the plot
+    plt.show()
+    
+
+
+
+
 
 def simple_implementation(nmax):
     # %%time
